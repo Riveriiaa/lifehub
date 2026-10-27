@@ -11,6 +11,16 @@
     <h2>Tänään</h2>
     <p>Ei tapahtumia tänään</p>
 <button type="button"> Lisää tapahtuma</button>
+
+    <form id="event-form" hidden>
+<label for="event-title">Tapahtuman nimi</label>
+<input type="text" id="event-title" required/>
+
+<label for="event-date">Päivämäärä</label>
+<input type="date" id="event-date" required/>
+
+    <button type="submit">Tallenna</button>
+</form>
      </section>
 <script src="script.js"></script>
 </body>
