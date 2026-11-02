@@ -9,10 +9,11 @@ addEventButton.addEventListener('click', handleAddEvent);
 
 function handleSaveEvent(event) {
     event.preventDefault();
-    const input = document.querySelector('#event-date');
-
+    const titleInput = document.querySelector('#event-title');
+    const dateInput = document.querySelector('#event-date');
     const result = document.querySelector('p');
-    result.textContent = input.value;
+        result.textContent = titleInput.value + ' | ' + dateInput.value;
+        eventForm.hidden=true
 }
 
 eventForm.addEventListener('submit', handleSaveEvent);
